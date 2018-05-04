@@ -1,0 +1,83 @@
+-- This file has been generated from package.yaml by hpack version 0.20.0.
+--
+-- see: https://github.com/sol/hpack
+--
+-- hash: 06bc140fe3ed035f2db46a4527ba9417520e2b8d2d4d705e37511b9b85f2a9c5
+
+name:           intro-recursion-schemes
+version:        0.1.0.0
+synopsis:       Short description of your package
+description:    Please see the README on Github at <https://github.com/githubuser/rovers#readme>
+homepage:       https://github.com/githubuser/rovers#readme
+bug-reports:    https://github.com/githubuser/rovers/issues
+author:         Author name here
+maintainer:     example@example.com
+copyright:      2017 Author name here
+license:        BSD3
+license-file:   LICENSE
+build-type:     Simple
+cabal-version:  >= 1.10
+
+extra-source-files:
+    ChangeLog.md
+    README.md
+
+source-repository head
+  type: git
+  location: https://github.com/githubuser/rovers
+
+library
+  hs-source-dirs:
+      src
+  build-depends:
+      base >=4.7 && <5
+    , containers
+    , data-ordlist
+  exposed-modules:
+      Lib
+      RecursionSchemes.Examples.ExprByFix
+      RecursionSchemes.Examples.ListByFix
+      RecursionSchemes.Examples.ListByFixpoint
+      RecursionSchemes.Examples.NatByFix
+      RecursionSchemes.Examples.NatByFixpoint
+      RecursionSchemes.Examples.Types
+      RecursionSchemes.Fix.Funcs
+      RecursionSchemes.Fix.Types
+      RecursionSchemes.Fixpoint.Funcs
+      RecursionSchemes.Fixpoint.Types
+      WithoutFix.OriginRecursion
+  other-modules:
+      Paths_intro_recursion_schemes
+  default-language: Haskell2010
+
+executable intro-recursion-schemes-exe
+  main-is: Main.hs
+  hs-source-dirs:
+      app
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      base >=4.7 && <5
+    , containers
+    , data-ordlist
+    , intro-recursion-schemes
+  other-modules:
+      Paths_intro_recursion_schemes
+  default-language: Haskell2010
+
+test-suite intro-recursion-schemes-test
+  type: exitcode-stdio-1.0
+  main-is: Spec.hs
+  hs-source-dirs:
+      test
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      QuickCheck
+    , base >=4.7 && <5
+    , containers
+    , data-ordlist
+    , hspec
+    , intro-recursion-schemes
+  other-modules:
+      ListCheck
+      Paths_intro_recursion_schemes
+  default-language: Haskell2010
