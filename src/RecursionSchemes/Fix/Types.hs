@@ -1,5 +1,5 @@
 module RecursionSchemes.Fix.Types
-    ( Fix (Fix, unFix))
+    ( Fix (..))
     where
 
 newtype Fix f = Fix { unFix :: f (Fix f) }

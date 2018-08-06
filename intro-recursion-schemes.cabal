@@ -1,8 +1,8 @@
--- This file has been generated from package.yaml by hpack version 0.20.0.
+-- This file has been generated from package.yaml by hpack version 0.28.2.
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 06bc140fe3ed035f2db46a4527ba9417520e2b8d2d4d705e37511b9b85f2a9c5
+-- hash: 4eebf61293193d7684b55b5746c3a8c866773301ef394558c7e1e564f2a59cff
 
 name:           intro-recursion-schemes
 version:        0.1.0.0
@@ -17,7 +17,6 @@ license:        BSD3
 license-file:   LICENSE
 build-type:     Simple
 cabal-version:  >= 1.10
-
 extra-source-files:
     ChangeLog.md
     README.md

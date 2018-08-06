@@ -3,7 +3,7 @@
 {-# LANGUAGE FlexibleInstances #-}
 
 module RecursionSchemes.Fixpoint.Types
-    ( Fixpoint (inF, outF)
+    ( Fixpoint (..)
     ) where
 
 import RecursionSchemes.Fix.Types
